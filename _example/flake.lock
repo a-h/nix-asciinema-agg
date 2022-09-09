@@ -6,13 +6,17 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "narHash": "sha256-8Vtw6FlCNeH7uqIcEZ6OnA8wzC/klEvu730nml5YhOU=",
-        "path": "../",
-        "type": "path"
+        "lastModified": 1662751159,
+        "narHash": "sha256-6H90LKLLgoz9KjknHN4qBTi9Jo1R28s43pEvRvYRtlk=",
+        "owner": "a-h",
+        "repo": "nix-asciinema-agg",
+        "rev": "1040a6da2c36121c4a5158576cefcd446eb4408a",
+        "type": "github"
       },
       "original": {
-        "path": "../",
-        "type": "path"
+        "owner": "a-h",
+        "repo": "nix-asciinema-agg",
+        "type": "github"
       }
     },
     "flake-utils": {
