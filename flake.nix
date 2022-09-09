@@ -1,13 +1,20 @@
 {
-  outputs = { self, nixpkgs }:
-    let 
-      pkgs = import nixpkgs {
-        system = "aarch64-darwin";
-      };
-      agg = pkgs.callPackage ./agg.nix {};
-    in
-    {
-      packages.aarch64-darwin.default = agg;
-      packages.aarch64-darwin.agg = agg;
-    };
+  inputs = {
+    flake-utils.url = "github:numtide/flake-utils";
+    flake-utils.inputs.nixpkgs.follows = "nixpkgs";
+  };
+
+  outputs = { self, nixpkgs, flake-utils }:
+    flake-utils.lib.eachDefaultSystem (system:
+      let 
+        pkgs = import nixpkgs {
+          system = system;
+        };
+        agg = pkgs.callPackage ./agg.nix {};
+      in
+      {
+        defaultPackage = agg;
+        packages = agg;
+      }
+    );
 }

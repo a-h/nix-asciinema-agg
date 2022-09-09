@@ -2,19 +2,46 @@
   "nodes": {
     "agg": {
       "inputs": {
+        "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1662740018,
-        "narHash": "sha256-blKB8mB6/SeWP0rBIeJswCReG5/EgjU/vQcOnPS93J8=",
-        "owner": "a-h",
-        "repo": "nix-asciinema-agg",
-        "rev": "0c35a28a10a14b852f771e4c46b5c101f2344d7c",
+        "narHash": "sha256-8Vtw6FlCNeH7uqIcEZ6OnA8wzC/klEvu730nml5YhOU=",
+        "path": "../",
+        "type": "path"
+      },
+      "original": {
+        "path": "../",
+        "type": "path"
+      }
+    },
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1659877975,
+        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
         "type": "github"
       },
       "original": {
-        "owner": "a-h",
-        "repo": "nix-asciinema-agg",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1659877975,
+        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
         "type": "github"
       }
     },
@@ -49,6 +76,7 @@
     "root": {
       "inputs": {
         "agg": "agg",
+        "flake-utils": "flake-utils_2",
         "nixpkgs": "nixpkgs_2"
       }
     }
